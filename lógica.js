@@ -149,14 +149,16 @@ document.addEventListener('DOMContentLoaded', () => {
         palabraItem.className = 'palabra-item';
         
         palabraItem.innerHTML = `
-            <div class="palabra">${palabra}</div>
-            <form class="formulario">
-                <input type="text" class="texto" name="texto" required>
-                <button type="submit">Enviar</button>
-            </form>
-            <div class="resultado"></div>
-            <div class="aciertos"></div>
-        `;
+            <div class="contenedorJuego">
+                <div class="palabra">${palabra}</div>
+                <form class="formulario">
+                    <input type="text" class="texto" name="texto" autocomplete="off" required>
+                    <button type="submit">Enviar</button>
+                </form>
+                <div class="resultado"></div>
+                <div class="aciertos"></div>
+            </div>
+            `;
         
         console.log('Nueva palabra añadida:', palabra);
 
@@ -191,7 +193,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (inputTexto === palabraEnSílabas) {
             aciertos++;
             resultadoDiv.textContent = '¡Correcto!';
-            resultadoDiv.className = 'resultado correcto';
+            resultadoDiv.className = 'resultadocorrecto';
             puntuacionActualElement.textContent = `Puntuación Actual: ${aciertos}`; // Actualizar la puntuación actual
             obtenerNuevaPalabra();
         } else {

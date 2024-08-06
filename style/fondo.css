@@ -13,4 +13,10 @@ body {
         #0ad1c8, 
         #45dfb1, 
         #80ed99);
+    background-size: cover; 
+    background-attachment: fixed; 
+}
+
+.main-content {
+    padding-bottom: 10px; 
 }

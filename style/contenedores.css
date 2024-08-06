@@ -1,0 +1,80 @@
+.palabra-item {
+    background: #14919b;
+    border-radius: 15px;
+    margin: 0 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+
+.palabra-item .texto {
+    border: none; 
+    padding: 10px; 
+    font-size: 20px; 
+    color: #000000; 
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease; 
+}
+
+.palabra-item .texto:focus {
+        outline: none; 
+        background: rgba(255, 255, 255, 0.9); 
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+        border: 2px solid #0ad1c8; 
+}
+
+.palabra-item .texto::placeholder {
+        color: #0b6477; 
+        opacity: 0.8; 
+}
+
+button {
+    background-color: #14919B;
+    color: #ffffff; 
+    margin: 5px;
+    border: 2px solid #0aD1C8; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s, transform 0.2s; 
+}
+
+button:hover {
+    background-color: #0b6477; /* Color de fondo al pasar el ratón */
+    border-color: #213A57; /* Color del borde al pasar el ratón */
+    transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
+}
+
+button:active {
+    background-color: #0aD1C8; /* Color de fondo al hacer clic */
+    border-color: #45Df81; /* Color del borde al hacer clic */
+    transform: scale(0.95); /* Efecto de contracción al hacer clic */
+}
+
+button:disabled {
+    background-color: #e0e0e0; 
+    color: #a0a0a0; 
+    border-color: #d0d0d0; 
+    cursor: not-allowed; 
+    opacity: 0.6; 
+    transform: none; 
+}
+
+.palabra-item p {
+    color: #E74C3C;
+    text-shadow: 1px 1px rgb(155, 0, 0);
+    font-size: 18px; 
+    font-weight: bold;
+}
+
+.palabra-item .resultadocorrecto {
+
+    color: #80ed99;
+    text-shadow: 1px 1px rgb(0, 158, 8);
+    font-size: 18px; 
+    font-weight: bold;
+}
