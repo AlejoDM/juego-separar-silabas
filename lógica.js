@@ -85,7 +85,10 @@ function Sílabas(texto) {
     i = 0;
     let resultado = '';
     while (i < 20) {
-        if (síl[i] !== "" && síl[i + 1] !== "" && d.includes(síl[i][síl[i].length - 1]) && d.includes(síl[i + 1][0])) {
+        if (síl[i]==="qu" && síl[i+1][0] === "í") {
+            resultado += síl[i];
+            i++;
+        } if (síl[i] !== "" && síl[i + 1] !== "" && d.includes(síl[i][síl[i].length - 1]) && d.includes(síl[i + 1][0])) {
             resultado += síl[i];
             i++;
         } else if (síl[i] !== "" && síl[i + 1] !== "" && d.includes(síl[i][síl[i].length - 1]) && f.includes(síl[i + 1][0])) {
@@ -110,6 +113,7 @@ function Sílabas(texto) {
 
     return resultado;
 }
+
 document.addEventListener('DOMContentLoaded', () => {
     const contenedor = document.getElementById('contenedor');
     let aciertos = 0; // Variable para contar los aciertos
