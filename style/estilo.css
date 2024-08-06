@@ -1,8 +1,9 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    margin-top: 50px;
+    margin: 0;
 }
+
 .palabra-item {
     margin-bottom: 20px;
     padding: 10px;
@@ -20,4 +21,53 @@ body {
 }
 .correcto {
     color: green;
+}
+
+header {
+    background: rgba(33, 58, 87, 0.4); 
+    padding: 20px;
+    margin: 2%;
+    border-radius: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+}
+
+header div div {
+    text-align: right;
+    padding: 15px;
+    color: #80ed99;
+    font-weight:bold;
+    font-size: 18px;
+    display: inline-block;
+    background: linear-gradient(45deg, 
+        #213a57, 
+        #0b6477
+    );
+    text-decoration:underline #0ad1c8 2px;
+    border-radius: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 20px;
+}
+
+
+header h1 {
+    padding-bottom: 20px;
+    text-shadow: 
+                1px 1px 0 #80ed99, /* Sombra derecha */
+                -1px -1px 0 #0ad1c8, /* Sombra izquierda */
+                1px -1px 0 #45dfb1, /* Sombra superior */
+                -1px 1px 0 #14919b; /* Sombra inferior */
+    color: #213a57;
+}
+
+header h3 {
+    padding-bottom: 15px;
+    color: #80ed99;
+    text-shadow: 2px 2px 0 #213a57;
 }
