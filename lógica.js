@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let palabras = [];
 
     // URL del archivo en GitHub Gist (reemplaza con tu URL real)
-    const urlGist = 'https://gist.githubusercontent.com/AlejoDM/a70de235231fcf4169e521c8e219a3cc/raw/ba0c130e3006124ffa1c595b90ea06379aea8472/palabras.txt';
+    const urlGist = 'https://gist.githubusercontent.com/AlejoDM/a70de235231fcf4169e521c8e219a3cc/raw/ba0c130e3006124ffa1c595b90ea06379aea8472/palabras.txt?v=' + new Date().getTime();
 
     async function obtenerPalabrasDesdeGist() {
         try {
