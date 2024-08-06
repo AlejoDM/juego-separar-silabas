@@ -187,12 +187,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function verificarRespuesta(palabra, palabraItem) {
-        const inputTexto = palabraItem.querySelector('.texto').value.trim();
+        const inputTexto = palabraItem.querySelector('.texto').value.trim().toLowerCase();
         const palabraEnSílabas = Sílabas(palabra).trim();
         const resultadoDiv = palabraItem.querySelector('.resultado');
-
-        console.log('Texto ingresado:', inputTexto);
-        console.log('Palabra en sílabas:', palabraEnSílabas);
 
         if (inputTexto === palabraEnSílabas) {
             aciertos++;
