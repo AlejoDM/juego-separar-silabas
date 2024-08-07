@@ -1,5 +1,6 @@
 
 function Sílabas(texto) {
+    //Algoritmo: https://construyendoachispas.blog/2017/07/26/lenguaje-separar-palabras-en-silabas/
     texto = texto + "----";
     const síl = new Array(100).fill("");
     let cont = 0;
