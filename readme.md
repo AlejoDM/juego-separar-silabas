@@ -25,3 +25,9 @@
 - **HTML**: Estructura básica del juego.
 - **CSS**: Estilos para la interfaz de usuario.
 - **JavaScript**: Lógica del juego.
+
+### Cómo Funciona
+
+Mira el video de demostración a continuación para ver cómo funciona el juego:
+
+[![Video de Demostración](https://img.youtube.com/vi/Efl7tyIrImg/hqdefault.jpg)](https://www.youtube.com/watch?v=Efl7tyIrImg)
