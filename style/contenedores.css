@@ -75,3 +75,12 @@ button:disabled {
     font-size: 18px; 
     font-weight: bold;
 }
+
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+
+    .palabra-item .texto {
+        width: 50%;
+    }
+
+}
